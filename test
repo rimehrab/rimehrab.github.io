@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Under Construction</title>
+</head>
+<body>
+    <h1>Website Under Construction</h1>
+
+    <p>This website is currently under development and not yet ready for public access.</p>
+
+    <p>In the meantime, you can visit my Facebook profile for more information or to stay updated on the website's progress.</p>
+
+    <div id="facebook-link">
+        <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/d5612d8256f610a8a6d44308d6a5c372/v6/t65/q71/c106/i1313520_1022302682473116_1118971690646567495_n.jpg" alt="Facebook Logo" width="50" height="50">
+        <h2>Mehrab Mahmud Udoy (Ferris)</h2>
+        <p>My Facebook Profile</p>
+    </div>
+
+    <button id="redirectToFacebook">Visit My Facebook Profile</button>
+
+    <script>
+        const redirectButton = document.getElementById('redirectToFacebook');
+
+        redirectButton.addEventListener('click', () => {
+            // Redirect to your Facebook profile URL
+            window.location.href = 'https://www.facebook.com/rimehrab';
+        });
+    </script>
+</body>
+</html>
