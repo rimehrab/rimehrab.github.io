@@ -8,10 +8,7 @@
         #facebook-link {
             display: flex;
             align-items: center;
-        }
-
-        #facebook-link img {
-            margin-right: 10px;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -22,7 +19,7 @@
 
     <p>In the meantime, you can visit my Facebook profile for more information or to stay updated on the website's progress.</p>
 
-    <div id="facebook-link">
+    <div id="facebook-link" onclick="redirectToFacebook()">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1199px-Facebook_f_logo_%282019%29.svg.png" alt="Facebook Logo" width="50" height="50">
         <div>
             <h2>Mehrab Mahmud Udoy (Ferris)</h2>
@@ -30,15 +27,11 @@
         </div>
     </div>
 
-    <button id="redirectToFacebook">Visit My Facebook Profile</button>
-
     <script>
-        const redirectButton = document.getElementById('redirectToFacebook');
-
-        redirectButton.addEventListener('click', () => {
+        function redirectToFacebook() {
             // Redirect to your Facebook profile URL
             window.location.href = 'https://www.facebook.com/rimehrab';
-        });
+        }
     </script>
 </body>
 </html>
