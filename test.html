@@ -8,7 +8,18 @@
         #facebook-link {
             display: flex;
             align-items: center;
+            justify-content: center; /* Center the content horizontally */
             cursor: pointer;
+        }
+
+        #facebook-link img {
+            margin-right: 10px; /* Adjust the spacing as needed */
+        }
+
+        #facebook-link div {
+            display: flex;
+            flex-direction: column; /* Arrange name and profile description vertically */
+            align-items: flex-start; /* Align text to the left */
         }
     </style>
 </head>
@@ -26,6 +37,8 @@
             <p>My Facebook Profile</p>
         </div>
     </div>
+
+    <button id="redirectToFacebook">Visit My Facebook Profile</button>
 
     <script>
         function redirectToFacebook() {
