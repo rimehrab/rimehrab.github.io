@@ -1,50 +1,65 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Under Construction</title>
+    <title>Ferris' Anime Hub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
-        #facebook-link {
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #ff99cc, #cc33ff);
+            color: white;
+            text-align: center;
+        }
+        header {
+            padding: 20px;
+            font-size: 2em;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        .container {
             display: flex;
+            flex-direction: column;
             align-items: center;
-            justify-content: center; /* Center the content horizontally */
-            cursor: pointer;
+            justify-content: center;
+            height: 80vh;
         }
-
-        #facebook-link img {
-            margin-right: 10px; /* Adjust the spacing as needed */
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid white;
+            margin-bottom: 15px;
         }
-
-        #facebook-link div {
-            display: flex;
-            flex-direction: column; /* Arrange name and profile description vertically */
-            align-items: flex-start; /* Align text to the left */
+        .social-icons a {
+            color: white;
+            font-size: 24px;
+            margin: 0 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .social-icons a:hover {
+            transform: scale(1.2);
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            opacity: 0.7;
         }
     </style>
 </head>
 <body>
-    <h1>Website Under Construction</h1>
-
-    <p>This website is currently under development and not yet ready for public access.</p>
-
-    <p>In the meantime, you can visit my Facebook profile for more information or to stay updated on the website's progress.</p>
-
-    <div id="facebook-link" onclick="redirectToFacebook()">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1199px-Facebook_f_logo_%282019%29.svg.png" alt="Facebook Logo" width="50" height="50">
-        <div>
-            <h2>Mehrab Mahmud Udoy (Ferris)</h2>
-            <p>My Facebook Profile</p>
+    <header>Heyyy, I'm Ferris! ✨</header>
+    <div class="container">
+        <img src="https://i.imgur.com/tA7rmuB.jpeg" alt="Anime Avatar" class="avatar">
+        <p>Welcome to my digital realm! I create modern web apps and chill with anime vibes. 🎮💻</p>
+        <div class="social-icons">
+            <a href="https://github.com/rimehrab" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://instagram.com/rimehrab" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://t.me/itsrimehrab" target="_blank"><i class="fab fa-telegram"></i></a>
         </div>
     </div>
-
-    <button id="redirectToFacebook">Visit My Facebook Profile</button>
-
-    <script>
-        function redirectToFacebook() {
-            // Redirect to your Facebook profile URL
-            window.location.href = 'https://www.facebook.com/rimehrab';
-        }
-    </script>
+    <div class="footer">© 2025-Ferris | Designed with 💜 by Erika</div>
 </body>
 </html>
