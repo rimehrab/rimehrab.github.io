@@ -4,13 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirecting...</title>
-    <meta http-equiv="refresh" content="0; url=https://rimehrab.vercel.app">
     <script type="text/javascript">
-        window.location.href = "https://rimehrab.vercel.app";
+        // Get the current path and search parameters
+        const currentPath = window.location.pathname;
+        const currentSearch = window.location.search;
+        const currentHash = window.location.hash;
+        
+        // Base URL to redirect to
+        const baseURL = "https://rimehrab.vercel.app";
+        
+        // Construct the full redirect URL
+        const redirectURL = baseURL + currentPath + currentSearch + currentHash;
+        
+        // Perform the redirect
+        window.location.href = redirectURL;
     </script>
     <link rel="canonical" href="https://rimehrab.vercel.app">
 </head>
 <body>
-    <p>If you are not redirected automatically, follow this <a href="https://rimehrab.vercel.app">link to FerrisLand</a>.</p>
+    <p>Redirecting to FerrisLand...</p>
+    <p>If you are not redirected automatically, <a href="https://rimehrab.vercel.app" id="fallback-link">click here</a>.</p>
+    
+    <script>
+        // Update the fallback link to include the current path
+        const fallbackLink = document.getElementById('fallback-link');
+        const currentPath = window.location.pathname;
+        const currentSearch = window.location.search;
+        const currentHash = window.location.hash;
+        const fullPath = currentPath + currentSearch + currentHash;
+        
+        fallbackLink.href = "https://rimehrab.vercel.app" + fullPath;
+        fallbackLink.textContent = "click here to go to " + fullPath;
+    </script>
 </body>
 </html>
